@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>HealWithUs</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+ 
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  
+  <link href=".//assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@healWithUs.com</a>
+        <i class="bi bi-phone"></i> +91 9871236755
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+<!-- header -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">HealWithUs</a></h1>
+      
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+         
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#categories">Categories</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ's</a></li>
+          <li><a class="nav-link scrollto" href="#review">Reviews</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link " href="#hero" id="loginbtn">SignIn</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- <a href="#" class="appointment-btn scrollto" id="loginbtn"><span class="d-none d-md-inline"></span>Log in</a> -->
+      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+    </div>
+  </header>
+
+  <div id="signindiv">
+    <section class="appointment section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sign In</h2>
+        </div>
+        <form action="" id="signinform" method="post" role="form" class="email-form">
+          <div class="row">
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                  required>
+            </div>
+            </br>
+            <div class="form-group">
+              <input type="password" class="form-control" name="pass" id="pass" placeholder="Your password"
+                 required>
+            </div>
+          </div>
+          <a href="#">Forgot password?</a>
+          <br/>
+          <a href="#" id="signup" class="pb-3 pt-6">Don't have an account?click here</a>
+          <div class="text-center pt-3"><button id="signinbtn" type="submit">Sign In</button></div>
+        </form>
+      </div>
+    </section>
+  </div>
+  <div id="signupdiv">
+    <section class="appointment section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sign Up</h2>
+        </div>
+        <form action="https://sheetdb.io/api/v1/4cwbm94u78nih" method="post" role="form" class="email-form" id="sheetdb2-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="firstname" pattern="[A-Za-z ]{1,32}" class="form-control" id="name"
+                placeholder="Your FirstName" required>
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="text" name="lastname" pattern="[A-Za-z ]{1,32}" class="form-control" placeholder="Your LastName" required>
+            </div>
+            <br />
+            <div class="form-group  ">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+               required>
+            </div>
+            <div class=" form-group ">
+              <input type="phone" pattern="[0-9]{10}" class="form-control" name="phone" id="phone"
+                placeholder="Your Phone Number" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="pass" id="pass" placeholder="Your password"
+                data-rule="pass"  required>
+            </div>
+          </div>
+          <div class="text-center"><button id="signupbtn" type="submit">Sign Up</button></div>
+        </form>
+      </div>
+    </section>
+  </div>
+  
+  <div id="herodiv">
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>TALK - RESOLVE - HEAL</h1>
+      <h2>It's okay not  to be okay.</h2>
+      <a href="https://forms.gle/rBGfy9zjBasf4Pba6" class="btn-get-started scrollto" target="_blank">FREE SELF ASSESSMENT</a>
+    </div>
+  </section>
+
+  <main id="main">
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Why Choose Us?</h3>
+              <p>
+                You can participate in remote counselling sessions by email, chat rooms, video calls, or telephone conversations.The expanding market for internet counselling has made it simpler to obtain mental health care, regardless of whether you put in unusually long hours, have a busy family, reside in a remote place, or lack insurance.
+              </p>
+              <div class="text-center">
+                <a href="https://www.talkspace.com/blog/reasons-online-therapy-right-for-you/" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-alarm"></i>
+                    <h4>Convenient</h4>
+                    <p>Visits to therapy sessions should be frequent.Online counselling saves your time.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bi-currency-rupee"></i>
+                    <h4>Affordable</h4>
+                    <p>Online therapy are less expensive than in person sessions.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bi-list-check"></i>
+                    <h4>Personalized</h4>
+                    <p>Patient can choose their therapist.The sessions are confidential.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!--  About -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            <a href="https://www.youtube.com/watch?v=cwvI70ebaLI" class=" play-btn mb-4"></a>
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>AWARENESS TOWARDS MENTAL HEALTH</h3>
+            <p>Mental health is more important now than ever before, it impacts every area of our lives. The importance of good mental health ripples into everything we do, think, or say. </p>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bi-translate"></i></div>
+              <h4 class="title">INCLUDES ALL LANGUAGES</h4>
+              <p class="description">One can choose theirtherpaist based on your preffered language.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-key"></i></div>
+        
+              <h4 class="title">CONFIDENTIAL</h4>
+              <p class="description">This is a 100% private and secure platform.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-alarm"></i></div>
+              <h4 class="title">24/7 SUPPORT</h4>
+              <p class="description">One can interact with their therapist at any point in the day irrespective of time zones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!--Counts-->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="fas fa-user-md"></i>
+              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Doctors</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="far fa-hospital"></i>
+              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Departments</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas bi-star"></i>
+              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Average Rating</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Consultations</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Count -->
+
+
+    <!--Services-->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>You can text, make audio calls, or make video calls to connect with your therapist.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="fas bi-camera-video"></i></div>
+              <h4><a href="">VIDEO CALL</a></h4>
+              <p>One can interact with the therapist via video calls.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas bi-mic"></i></div> 
+              <h4><a href="">AUDIO CALL</a></h4>
+              
+              <p>Using this feature the patient can connect with the therapist via audio call.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas bi-chat"></i></div>
+              <h4><a href="">CHAT</a></h4>
+              <p>Using this feature one can interact with the therapist using text messages.</p>
+            </div>
+          </div>
+
+      </div>
+    </section><!--End Services-->
+
+    <!--Categories-->
+    <section id="categories" class="departments">
+      <div class="container">
+        <div class="section-title">
+          <h2>Categories</h2>
+          <p>A mental disorder is characterized by a clinically significant disturbance in an individual's cognition, emotional regulation, or behaviour.  It is usually associated with distress or impairment in important areas of functioning.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Anxiety Disorders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Depression</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Bipolar Disorder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Eating Disorder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">OCD</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Anxiety Disorders</h3>
+                    <p class="fst-italic">Anxiety disorders are characterised by excessive fear and worry and related behavioural disturbances. Symptoms are severe enough to result in significant distress or significant impairment in functioning. .</p>
+                    <p>There are several different kinds of anxiety disorders, such as: generalised anxiety disorder (characterised by excessive worry), panic disorder, social anxiety disorder,separation anxiety disorder , and others.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src=".//assets/img/anxiety.jpg"  alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Depression</h3>
+                    <p class="fst-italic">Depression is different from usual mood fluctuations and short-lived emotional responses to challenges in everyday life. </p>
+                    <p> During a depressive episode, the person experiences depressed mood or a loss of pleasure or interest in activities, for most of the day, nearly every day, for at least two weeks. Other symptoms include poor concentration, feelings of excessive guilt, hopelessness about the future, thoughts about suicide, disrupted sleep, changes in appetite, and feeling especially tired.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src=".//assets/img/depression.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    
+                    <h3>Bipolar Disorder</h3>
+                    <p class="fst-italic">Bipolar disorder experience alternating depressive episodes with periods of manic symptoms.</p><p>  During a depressive episode, the person experiences depressed mood  or a loss of pleasure or interest in activities, for most of the day, nearly every day.  Manic symptoms may include euphoria or irritability, increased activity or energy, and other symptoms such as increased talkativeness, racing thoughts, increased self-esteem, decreased need for sleep, distractibility, and impulsive reckless behaviour. </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src=".//assets/img/bipolar.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Eating Disorder</h3>
+                    <p class="fst-italic">Eating disorders, such as anorexia nervosa and bulimia nervosa, involve abnormal eating and preoccupation with food as well as prominent body weight and shape concerns.</p>
+                    <p>The symptoms or behaviours result in significant risk or damage to health, significant distress, or significant impairment of functioning. Anorexia nervosa often has its onset during adolescence or early adulthood and is associated with premature death due to medical complications or suicide.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src=".//assets/img/eatingD.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>OCD-Obsessive-compulsive disorder</h3>
+                    <p class="fst-italic">Obsessive-compulsive disorder (OCD) features a pattern of unwanted thoughts and fears (obsessions) that lead you to do repetitive behaviors.</p>
+                    <p>It is also possible to have only obsession symptoms or only compulsion symptoms. You may or may not realize that your obsessions and compulsions are excessive or unreasonable, but they take up a great deal of time and interfere with your daily routine and social, school or work functioning.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src=".//assets/img/ocd.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Departments Section -->
+
+    <!-- ======= Doctors Section ======= -->
+    <section id="doctors" class="doctors">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Doctors</h2>
+          
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src=".//assets/img/pha.jpg" class="img-fluid" alt=""></div>
+              
+              <div class="member-info">
+                <h4>Dr. Phani Prasant Mulakaluri</h4>
+                <span>MD - Psychiatry, MBBS</span>
+                <p>Dr. Phani Prasant Mulakaluri has an experience of 23 years in this field.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src=".//assets/img/naresh.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr.Naresh Vadlamani</h4>
+                <span>MD - Psychiatry, MBBS</span>
+                <p>Dr.Naresh Vadlamani has an experience of 27 years in this field.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src=".//assets/img/madhurima.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. P. Madhurima Reddy</h4>
+                <span>M.Sc - Psychology, Ph.D,Psychologist</span>
+                <p>Dr. P. Madhurima Reddy has an experience of 28 years in this field</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src=".//assets/img/pooja.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ms.Pooja Naik</h4>
+                <span>M.Sc - Psychology</span>
+                <p>Ms.Pooja Naik has an experience of 12 years.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+         
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">How long can I use HealWithUs?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  HealWithUs is available for you as long as you need it. This is mostly determined by your individual needs and therapeutic objectives. After few weeks, you might realise that your online therapy sessions have provided you with the benefit you were hoping for, whilst someone else might prefer to continue seeing their therapist for a longer period of time.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Is Online Therapy as effective as an In-person Therapy?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Online Counselling is very similar to the conventional form of counselling to resolve the mental health issues with an added advantage of comfort, affordability, and ease. Online Counselling or Online Therapy is a use of guided therapies like CBT, ACT, DBT etc. by a trained psychologist having an adequate expertise for treatment of stress, anxiety, depression, etc. There are number of studies supporting the fact that the online therapies are as adequate and effective as traditional in-person counselling. The confidence in our platform is substantiated by the feedback and reviews, we frequently receive from our users.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What to keep in mind during online Conselling ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The first thing we would recommend is to keep an open mind and be yourself! We appreciate when you take that first step in your mental health journey, and therapy is all about being true to yourself and allowing yourself to heal from within. Online counselling may feel the same as offline counselling, except in this case it would be in the familiar vicinity of your home or wherever you are during your session. Therefore, we would also like you to be comfortable and at ease with yourself and with your therapist.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Is it confidential and secure? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Depression is a sensitive topic - we follow industry best practices to keep your information private. We encrypt all data using 256 bit SSL security and are HIPAA compliant. Only your prescribing provider will have access to your information.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">When are mental health appointments available? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  HealWithUs provides fast and easy appointment scheduling. Convenient times are available, including evenings and weekends, so you can schedule an appointment as soon as possible with a date and time that works for you. Have your first therapy appointment in a week or less compared to the weeks or months it takes to schedule an in-person visit.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Reviews Section ======= -->
+    <section id="review" class="testimonials">
+      <div class="container">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Puja Mittal</h3>
+                  <h4>Homemaker</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    I was unsure about starting therapy when I reached out to HealWithUs. Their personalized therapy plans, 24/7 support & absolute flexibility in terms of choosing time or therapist got me to enroll. I have learnt to manage my anxiety so well. My panic attacks are a thing of distant past now.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Reviews item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Aishwarya Hegde</h3>
+                  <h4>Student</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    College was not what I expected. I had lost all confidence & could not cope with the academic stress & my strained relationship. My therapist at HealWithUs helped me find my self esteem & confidence. She also helped me with effective coping mechanisms for my stress & relationship issues.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Review item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Aman Agarwal</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    I like HealWithUs. It's nice to be able to say what I need to, and have somebody check in with me daily giving me feedback. It makes me feel more grounded and determined to do things.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Review item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Prasad Srivastav</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    This has been truly a life saving company! Having access to a doctor on my time and someone to talk to supporting my mental health along with access to support at all hours has changed my life. An incredible value for the access of mental health is amazing!
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Review item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>John Kapoor</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    I appreciate everything about HealWithUs, making healthcare so efficient and easy access! Everyone is always so friendly and willing to help and accomodate to your needs. I trust HealWithUs and highly recommend!
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Review item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Reviews Section -->
+
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Make an Appointment</h2>
+          <p>You can text, make audio calls, or make video calls to connect with your therapist.</p>
+        </div>
+
+        <form action="https://sheetdb.io/api/v1/74m8ij67lsb3i" method="post" role="form" class="email-form" name="google-sheet" id="sheetdb1-form">
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <input type="text" pattern="[A-Za-z ]{1,32}" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:10" data-msg="Please enter at least 10 chars" required>
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-md-4 form-group mt-3 ">
+              <select name="mode-of-appointment" id="mode-of-appointment" class="form-select" required>
+                <option value="">Mode Of Appointment</option>
+                <option value="Video Call">Video Call</option>
+                <option value="Audio Call">Audio Call</option>
+                <option value="Chat">Chat</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 ">
+              <select name="time" id="doctor" class="form-select" aria-placeholder="Select a timeslot" required>
+                <option value="">Select Time Slot</option>
+                <option value="7 AM - 11 AM">7 AM - 11 AM </option>
+                <option value="11 AM - 3 PM">11 AM - 3 PM</option>
+                <option value="3 PM - 7 PM">3 PM - 7 PM</option>
+                <option value="7 PM - 11 PM">7 PM - 11 PM</option>
+                <option value="11 PM - 3 AM">11 PM - 3 AM</option>
+                <option value="3 AM - 7 AM">3 AM - 7 AM</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 ">
+              <select name="language" id="language" class="form-select" aria-placeholder="Select a language" required>
+                <option value="">Select language</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Kannada">Kannada</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)" ></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="text-center"><button type="submit">Make an Appointment</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Appointment Section -->
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+
+        </div>
+      </div>
+
+      <div>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=secundra&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Near Clock Tower,Secunderabad,Telangana 500003</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@healWithUs.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9871236755</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="https://sheetdb.io/api/v1/4avp1dvfeluqp" method="post" role="form" class="email-form" id="sheetdb-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input pattern="[A-Za-z ]{1,32}" type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>HealWithUs</h3>
+            <p>
+              Secunderabad,Telangana,500003 <br><br>
+              <strong>Phone:</strong> +91 9871236755<br>
+              <strong>Email:</strong> info@healWithUs.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#doctors">Doctors</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Video Calls</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Audio Calls</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Chat</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Subscribe Here</h4>
+
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>HealWithUs</span></strong>. All Rights Reserved
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="" target="_self" class="back-to-top d-flex align-items-center justify-content-center"><i class="bx bi-arrow-up-short"></i></a>
+ 
+
+  <!--JS Files -->
+  <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <!--  Main JS File -->
+  <script src=".//assets/js/main.js"></script>
+
+  <script>
+    var form=document.getElementById('sheetdb-form');
+    form.addEventListener("submit",e=>{
+      e.preventDefault();
+      fetch(form.action,{
+        method: "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+      }).then(
+        response=>response.json()
+      ).then((html)=>{
+        alert('Your details have been entered successfully!');
+        document.getElementById("sheetdb-form").reset();
+      });
+    });
+
+    var form1=document.getElementById('sheetdb1-form');
+    form1.addEventListener("submit",e=>{
+      e.preventDefault();
+      fetch(form1.action,{
+        method :"POST",
+        body: new FormData(document.getElementById("sheetdb1-form")),
+      }).then(
+        response=>response.json()
+      ).then((html)=>{
+        alert("Your appointment has been booked successfuly!!");
+        document.getElementById("sheetdb1-form").reset();
+      });
+    });
+
+    var form2=document.getElementById('sheetdb2-form');
+    form2.addEventListener("submit",e=>{
+      e.preventDefault();
+      fetch(form2.action,{
+        method :"POST",
+        body: new FormData(document.getElementById("sheetdb2-form")),
+      }).then(
+        response=>response.json()
+      ).then((html)=>{
+        alert("You have signed up successfully");
+        document.getElementById("sheetdb2-form").reset();
+        signupdiv.style.display="none";
+       herodiv.style.opacity="1";
+      });
+    });
+  </script>
+</body>
+
+</html>
